@@ -5,8 +5,17 @@
 // CREATE THE FUNCTIONS BELOW
 
 // Document Ready Function. All of your jQuery should go in here. 
-$( document ).ready(function() {
+$( document ).ready(function(){
   
+  $("#try").click(function(){
+  	var message=$("input").val();
+  	var Newmessage=ay(message);
+  	$("#message").text(Newmessage);
+  });
+   
+  function ay(word){
+  	return word + "ay";
+  }
 
 
 
