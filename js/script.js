@@ -8,14 +8,22 @@
 $( document ).ready(function(){
   
   $("#try").click(function(){
+  	var output=[];
   	var message=$("input").val();
-  	var Newmessage=ay(message);
-  	$("#message").text(Newmessage);
+  	var res=message.split(" ");
+  	for (i=0;i<res.length; i=i+1){
+	  	var Newmessage=ay(res[i]);
+  		output.push(Newmessage);
+  	}
+  	
   });
+   
    
   function ay(word){
   	return word + "ay";
   }
+   
+ 
 
 
 
