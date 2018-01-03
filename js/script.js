@@ -15,7 +15,6 @@ $( document ).ready(function(){
 	  	var Newmessage=ay(res[i]);
   		output.push(Newmessage);
   	}
-  	
   });
    
    
