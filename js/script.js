@@ -5,23 +5,23 @@
 // CREATE THE FUNCTIONS BELOW
 
 
+
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function(){
   
-
-  function ay(word){
-  	return word + "ay";
-  }
-   
+  $('#try').click(function(){
+      var feed = $('input').val();
+      $('body').append(feed);
+  });
  
   function sentenceToWord(x){
-     sent = x.split(" ");
+     var sent = x.split(" ");
     return sent;
   }
  console.log(sentenceToWord("Hello World "));
  
  function wordsToPigLatin(words){
-    for(i=0;i<words.length;i++){
+    for(var i=0;i<words.length;i++){
         words[i] = words[i]+ "ay";
     }
  }
@@ -32,8 +32,13 @@ $( document ).ready(function(){
 // Create the wordToPigLatin function that takes a word as a parameter and returns a transfromed word. 
 
 
-
-
+ function wordToPigLatin(x){
+      var pig = x + "ay";
+    return pig; 
+  }
+    $("try").click(function(){
+        wordToPigLatin();
+    }
 
 
 // Create the sentenceToPigLatin function that takes a sentence as a parameter
